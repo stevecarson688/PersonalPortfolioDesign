@@ -1,16 +1,95 @@
 <!doctype html>
-<html lang="<!-- figma:lang -->">
+<html lang="fr">
   <head>
-    <!-- figma:head-start -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><!-- figma:title --></title>
-    <!-- figma:head-end -->
+    <meta name="description" content="Portfolio de Steve Carson, delivery manager et développeur full-stack." />
+    <title>Steve Carson | Delivery Manager & développeur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <!-- figma:body-start -->
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <!-- figma:body-end -->
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Retour en haut">SC<span>.</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu">
+          <span></span><span></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Navigation principale">
+          <a href="#about">À propos</a>
+          <a href="#experience">Expériences</a>
+          <a href="#skills">Compétences</a>
+          <a href="#education">Formation</a>
+          <a class="nav-cta" href="#contact">Me contacter <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section id="top" class="hero section-grid">
+        <div class="container hero-layout">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span class="status-dot"></span> Disponible pour de nouveaux projets</p>
+            <h1>Je transforme les idées en <em>solutions</em> qui avancent.</h1>
+            <p class="hero-text">Delivery Manager & développeur full-stack basé à Yaoundé. J'aide les équipes à livrer des produits numériques utiles, fiables et bien pensés.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#experience">Découvrir mon parcours <span>↓</span></a>
+              <a class="button button-quiet" href="#contact">Parlons de votre projet <span>↗</span></a>
+            </div>
+            <div class="hero-meta"><span>Yaoundé, Cameroun</span><span>4+ années d'expérience</span></div>
+          </div>
+          <div class="hero-visual reveal" aria-label="Profil de Steve Carson">
+            <div class="portrait-card">
+              <div class="portrait-glow"></div>
+              <div class="portrait-initials">SC</div>
+              <div class="portrait-caption"><span>STEVE CARSON</span><span>BUILD / SHIP / IMPROVE</span></div>
+            </div>
+            <div class="floating-note note-top"><span class="note-mark">✦</span><span>4+ ans<br /><b>à construire</b></span></div>
+            <div class="floating-note note-bottom"><span class="note-number">20<span>+</span></span><span>projets<br />livrés</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about section-grid section-block">
+        <div class="container split-layout reveal">
+          <div><p class="section-kicker">01 / À PROPOS</p><h2>Un profil hybride,<br /><em>orienté impact.</em></h2></div>
+          <div class="about-content"><p class="lead">Je navigue entre stratégie, produit et technologie pour rendre les projets plus simples à piloter et plus agréables à utiliser.</p><p>De l'automatisation des opérations à l'intégration d'interfaces web, je m'intéresse aux détails qui font qu'une solution fonctionne vraiment pour les personnes qui l'utilisent.</p><div class="stat-row"><div><strong>20<span>+</span></strong><small>Projets livrés</small></div><div><strong>5<span>+</span></strong><small>Clients ERP</small></div><div><strong>3</strong><small>Pays touchés</small></div></div></div>
+        </div>
+      </section>
+
+      <section id="experience" class="section-block experience-section">
+        <div class="container"><div class="section-heading reveal"><div><p class="section-kicker">02 / EXPÉRIENCE</p><h2>Ce que j'ai <em>construit.</em></h2></div><p class="heading-note">Des expériences qui m'ont appris à<br />penser grand et livrer avec précision.</p></div>
+          <div class="timeline">
+            <article class="timeline-item reveal"><div class="timeline-date">16 septembre 2026 — aujourd'hui</div><div class="timeline-marker active"></div><div class="timeline-card"><div><p class="company">SMALLJOBS SERVICE <span>↗</span></p><h3>User Testing</h3><p class="location">Yaoundé, Cameroun</p></div><ul><li>Vérification et test quotidien de 3 à 5 formulaires d'études de marché</li><li>Respect strict de la confidentialité des données traitées</li><li>Collaboration avec SMJ pour améliorer ses produits digitaux</li><li>Rédaction de rapports clairs et concis</li></ul></div></article>
+            <article class="timeline-item reveal"><div class="timeline-date">23 mars 2026 — 08 août 2026</div><div class="timeline-marker"></div><div class="timeline-card"><div><p class="company">KAEYROS ANALYTICS <span>↗</span></p><h3>Delivery Manager / Intégrateur Odoo & n8n</h3><p class="location">Yaoundé, Cameroun</p></div><ul><li>Pilotage de solutions ERP Odoo pour des PME camerounaises</li><li>Conception de workflows n8n : WhatsApp, formulaires et alertes</li><li>Coordination des équipes, plannings, KPIs et relations clients</li></ul></div></article>
+            <article class="timeline-item reveal"><div class="timeline-date">01 juillet 2025 — 31 décembre 2025</div><div class="timeline-marker"></div><div class="timeline-card"><div><p class="company">MEGA-IQUE <span>↗</span></p><h3>Développeur web et mobile</h3><p class="location">Digital Ange Raphael, Douala, Cameroun</p></div><ul><li>Réalisation de l'interface utilisateur du site e-commerce Mboa-Cars</li><li>Réalisation de l'interface mobile Flutter MegaTransitFleet</li><li>Intégration du SSO dans l'application web et mobile</li><li>Intégration de l'API Traccar dans l'application MegaTransitFleet</li></ul></div></article>
+            <article class="timeline-item reveal"><div class="timeline-date">09 septembre 2024 — 02 décembre 2024</div><div class="timeline-marker"></div><div class="timeline-card"><div><p class="company">NETAFRICA <span>↗</span></p><h3>Stagiaire professionnel développeur WordPress</h3><p class="location">Bonamoussadi, Douala, Cameroun</p></div><ul><li>Travail sur le projet Live of Charity</li><li>Formation pratique en développement WordPress</li></ul></div></article>
+            <article class="timeline-item reveal"><div class="timeline-date">07 juin 2024 — 05 septembre 2024</div><div class="timeline-marker"></div><div class="timeline-card"><div><p class="company">INGENIOTECH <span>↗</span></p><h3>Stagiaire professionnel développeur Full Stack web et mobile</h3><p class="location">Bonamoussadi, Douala, Cameroun</p></div><ul><li>Mise à jour du contenu du site web de l'État du Covid</li><li>Création d'une application de gestion des arrivées et départs des employés</li><li>Réalisation de l'interface utilisateur du site vitrine de la société IBN</li></ul></div></article>
+            <article class="timeline-item reveal"><div class="timeline-date">06 juin 2023 — 06 septembre 2023</div><div class="timeline-marker"></div><div class="timeline-card"><div><p class="company">SEVEN COMMON FACTOR <span>↗</span></p><h3>Stagiaire professionnel développeur Full Stack web et mobile</h3><p class="location">Bonamoussadi, Douala, Cameroun</p></div><ul><li>Réalisation de l'interface utilisateur d'un site de commande fast-food</li><li>Réalisation de l'interface utilisateur d'un site e-learning</li><li>Création d'API produits pour des sites e-commerce</li><li>Intégration de systèmes de paiement</li></ul></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills-section section-grid section-block"><div class="container"><div class="section-heading reveal"><div><p class="section-kicker">03 / COMPÉTENCES</p><h2>Les outils de<br /><em>mon quotidien.</em></h2></div><div class="skill-filters" role="group" aria-label="Filtrer les compétences"><button class="filter-button is-active" type="button" data-filter="all">Tout</button><button class="filter-button" type="button" data-filter="build">Build</button><button class="filter-button" type="button" data-filter="deliver">Deliver</button></div></div><div class="skill-grid">
+          <article class="skill-card reveal" data-category="deliver"><span class="skill-index">01</span><span class="skill-icon amber">↯</span><h3>Automatisation<br />& intégration</h3><p>n8n · Workflows · API · IA/LLM<br />WhatsApp Business · Processus métier</p></article>
+          <article class="skill-card reveal" data-category="deliver"><span class="skill-index">02</span><span class="skill-icon violet">◇</span><h3>ERP<br />& Odoo</h3><p>Odoo SaaS 17/18 · Odoo Studio<br />Server Actions · Règles d'automatisation<br />Modules personnalisés</p></article>
+          <article class="skill-card reveal" data-category="deliver"><span class="skill-index">03</span><span class="skill-icon mint">▦</span><h3>Gestion<br />de projet</h3><p>Pilotage client · Recueil de besoins<br />Documentation fonctionnelle<br />Méthode MoSCoW</p></article>
+          <article class="skill-card reveal" data-category="build"><span class="skill-index">04</span><span class="skill-icon blue">⌘</span><h3>Développement<br />web</h3><p>HTML · CSS · JavaScript<br />Laravel · React.js · Next.js<br />Tailwind CSS</p></article>
+          <article class="skill-card reveal" data-category="build"><span class="skill-index">05</span><span class="skill-icon green">⌁</span><h3>Développement<br />backend</h3><p>Node.js · Express.js<br />Python</p></article>
+          <article class="skill-card reveal" data-category="build"><span class="skill-index">06</span><span class="skill-icon coral">◌</span><h3>Développement<br />mobile</h3><p>Flutter · React Native</p></article>
+          <article class="skill-card reveal" data-category="build"><span class="skill-index">07</span><span class="skill-icon amber">▤</span><h3>Bases de données<br />relationnelles</h3><p>SQL · PostgreSQL · SQLite</p></article>
+          <article class="skill-card reveal" data-category="build"><span class="skill-index">08</span><span class="skill-icon violet">◍</span><h3>Bases de données<br />non relationnelles</h3><p>MongoDB · Firebase</p></article>
+          <article class="skill-card reveal" data-category="build"><span class="skill-index">09</span><span class="skill-icon blue">◈</span><h3>Conteneurisation</h3><p>Bonne connaissance<br />de Docker</p></article>
+        </div></div></section>
+
+      <section id="education" class="education-section section-block"><div class="container split-layout reveal"><div><p class="section-kicker">04 / FORMATION</p><h2>Ce qui m'a<br /><em>formé.</em></h2></div><div class="education-list"><article><span class="edu-year">Mars 2022 — 2024</span><div><h3>Certificat de Qualification Professionnelle</h3><p>Option Développeur Web Full-Stack · École de Formation Seven Academy, Akwa-Douala</p><small><strong>Modules :</strong> HTML/CSS/JS · React.js / Next.js · Node/Express · MongoDB/Firebase<br /><strong>Travaux de recherche :</strong> « Mise en place d'un Web Portfolio Interactif » dans le cadre du mémoire de fin de formation.</small></div><b>↗</b></article><article><span class="edu-year">Octobre 2022 — 2024</span><div><h3>Brevet de Technicien Supérieur</h3><p>Option Génie Logiciel · Institut Universitaire du Golfe de Guinée / Institut Supérieur des Technologies Avancées, Pk8-Douala</p><small><strong>Modules :</strong> HTML/CSS/JS · Merise/UML · MySQL · Programmation en C<br /><strong>Travaux de recherche :</strong> « Application Web de réservation de chambre d'hôtel » dans le cadre du mémoire de fin de formation.</small></div><b>↗</b></article></div></div></section>
+
+      <section id="contact" class="contact-section section-grid section-block"><div class="container contact-layout reveal"><div><p class="section-kicker">05 / CONTACT</p><h2>Un projet en tête ?<br /><em>Faisons-le exister.</em></h2><p class="contact-copy">Une idée, un besoin d'automatisation ou simplement envie d'échanger ? Ma boîte mail est ouverte.</p><div class="contact-links"><a href="mailto:steve.carson@example.com">stevecarson195@gmail.com <span>↗</span></a><a href="tel:+237690000000">+237 657 917 076 <span>↗</span></a><a href="https://www.linkedin.com/in/bill-steve-tchao-ziwa-5b693a314" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a><a href="https://github.com/stevecarson688" target="_blank" rel="noreferrer">GitHub <span>↗</span></a></div></div><form class="contact-form"><label>Votre nom<input name="name" type="text" placeholder="Comment vous appelez-vous ?" required /></label><label>Votre email<input name="email" type="email" placeholder="vous@exemple.com" required /></label><label>Votre message<textarea name="message" rows="3" placeholder="Parlez-moi de votre projet..." required></textarea></label><button class="button button-primary" type="submit">Envoyer le message <span>↗</span></button><p class="form-status" role="status" aria-live="polite"></p></form></div></section>
+    </main>
+    <footer class="site-footer"><div class="container"><span>© 2024 Steve Carson</span><span>Conçu avec intention. Codé avec soin.</span><a href="#top">Retour en haut ↑</a></div></footer>
   </body>
 </html>

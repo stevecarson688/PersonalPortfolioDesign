@@ -1,0 +1,10 @@
+{
+  "description": "Showcase your professional skills and experiences with a modern, one-page portfolio designed for web and mobile, tailored for recruiters and potential clients.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
